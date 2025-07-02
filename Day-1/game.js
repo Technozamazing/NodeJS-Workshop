@@ -1,19 +1,14 @@
-import readline from 'readline'
+//NodeJS Input through npm package readline-sync
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+const readline = require('readline-sync');
 
 const target = Math.floor(Math.random() * 100);
 let attempts = 0;
 
 function guessNumber() {
-    rl.question("Guess a Number between 1 and 100:", (input) => {
-    const guess = parseInt(input);
+    let guess = readline.question("guess Number:");
     attempts++;
 
-    guess = Number(guess);
     if (isNaN(guess)) {
         console.log('Invalid input! Please enter a valid number.');
         guessNumber();
@@ -35,5 +30,8 @@ function guessNumber() {
         console.log('Thank you for playing!');
         return;
     }
-})
 }
+
+console.log("Welcome to the Guess the Number Game!");
+console.log("I have selected a number between 0 and 100. Try to guess it!");
+guessNumber();
