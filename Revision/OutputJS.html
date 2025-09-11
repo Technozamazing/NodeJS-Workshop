@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My first web page</h1>
+    <p>There is something I want to tell...</p>
+
+    <p id="something"></p>
+
+    <script>
+        // document.getElementById('something').innerHTML = "<h2>I'm Roman Shrestha</h2>";   By innerHTML method
+        // document.getElementById('something').innerText = "Hello there";      By innerText method  -- for plain text output
+        // document.write(11+2)     By this method be sure that document.write() isn't called after the page is loaded, otherwise the older content will be erased by the current output.
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- What happens when we call document.write() after the page loads... -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is some texts....</p>
+
+    <script>
+        setTimeout( ()=>{document.write("Sorry previous Texts were overwritten...")}, 2000 );
+    </script>
+</body>
+</html>
+
+
+
+
+<!-- Using Console.log() -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(5+6);
+    </script>
+</body>
+</html>

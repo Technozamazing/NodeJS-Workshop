@@ -1,0 +1,95 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>
+<body>
+
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html>  -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="change">Document</title>
+    <script>
+        function myfunction()
+        {
+            document.getElementById('change').innerHTML = 'About';
+        }
+    </script>
+</head>
+<body>
+    <h2>Demo JavaScript in Head.</h2>
+    <button type="button" onclick="myfunction()">About me</button>
+    <button type="button" onclick="document.getElementById('change').innerHTML = 'initial'">Document</button>
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeTitle(newTitle)
+        {
+            document.title = newTitle;
+        }
+    </script>
+</head>
+<body>
+    <h2>Demo JavaScript in Head</h2>
+    <button type="button" onclick="changeTitle('About')">About</button>
+    <button type="button" onclick="changeTitle('Document')">Document</button>
+</body>
+</html> -->
+
+
+
+
+<!-- By using external JavaScript -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="title">Demo external JavaScript</h2>
+    <p id="text">Text to be changed...</p>
+
+    <button type="button" onclick="changeText('text')">Change Text</button>
+    <button type="button" onclick="changeTitle('title')">Change Title</button>
+
+    <p>This example links to <strong>changeText.js</strong> and <strong>changeTitle.js</strong><br>Here, <strong>changeText function</strong> and <strong>changeTitle function</strong> is stored in <strong>changeText.js</strong> and <strong>changeTitle.js</strong> respectively.</p>
+    <script src="changeText.js"></script>
+    <script src="changeTitle.js"></script>
+</body>
+</html>

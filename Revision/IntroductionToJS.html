@@ -1,0 +1,106 @@
+<!-- This session is all about Introduction to JavaScript...
+Here we have seen about the "getElementById" method its a part of DOM
+use it with innerHTML, innerText, style, etc -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What can Javascript Do?</h1>
+    <p id="demo">This can be changed to Roman Shrestha.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Roman Shrestha' ">Click me!</button>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>About me:</h1>
+    <p>Hello there! hope that you are fine there... <br> My name is Roman Shrestha. I live in  the beautiful city of Pokhara here in Nepal.</p>
+    <p id="contact">If you want to contact me..</p>
+    <button type="button" onclick="document.getElementById('contact').innerHTML = 'Contact: contact@romanstha.com.np'">Click me!</button>
+</body>
+</html>
+
+ 
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What can JavaScript do?</h1>
+    <p id="size">JS can change the size of this font.</p>
+    <button type="button" onclick="document.getElementById('size').style.fontSize = '35px'">Click me!</button>
+    <button type="button" onclick="document.getElementById('size').style.fontSize = 'initial'">Reset</button>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What can JavaScript do?</h1>
+    <p id="hide">JavaScript can hide this paragraph.</p>
+    <br>
+    <button type="button" onclick="document.getElementById('hide').style.display = 'none'">Hide</button>
+    <button type="button" onclick="document.getElementById('hide').style.display = 'initial'">Reset</button>
+</body>
+</html>
+
+
+
+
+<!-- A method in JavaScript is just a function that is a property of an object. -->
